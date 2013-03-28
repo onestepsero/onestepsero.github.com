@@ -1,0 +1,30 @@
+<html>
+<head>
+<script src="js/jquery.js"></script>
+</head>
+<body>
+
+<script>
+
+
+$(document).ready(function() {
+        
+        $.ajax({
+                url:"test.json",
+                success: whenSuccess,
+                err: whenError
+
+        });
+        function whenError(){
+                console.log("error");
+        }
+
+        function whenSuccess(){
+                console.log("success");
+        }
+}
+);
+</script>
+</body>
+</html>
+
