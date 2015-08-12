@@ -16,3 +16,29 @@
     margin-right: 3px;
     top: 2px;
 }
+
+.titlebar {
+    position: relative;
+    background-color: #FAFAFA;
+    padding: 12px 0 20px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #E7E7E7;
+    overflow: hidden;
+}
+
+.titlebar .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+}
+
+.seoul-color {
+    width: 100%;
+}
+
+.seoul-color td {
+    color: transparent;
+    font-size: 0;
+    line-height: 4px;
+}
