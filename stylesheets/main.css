@@ -1,0 +1,18 @@
+/**
+ * Created by NHNENT on 2015-08-12.
+ */
+.navbar {
+    padding: 10px 0;
+    margin-bottom: 0px !important;
+}
+
+.navbar-default {
+    background: none;
+    border: 0;
+    border-radius: 0;
+}
+
+.navbar-default .glyphicon {
+    margin-right: 3px;
+    top: 2px;
+}
