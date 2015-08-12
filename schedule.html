@@ -19,119 +19,17 @@
     <title>www.haedal.org</title>
 </head>
 
+<script>
+
+    $(document).ready(function(){
+        $.get("header.html", function(data) {
+            $("#header").html(data);
+        });
+    });
+</script>
 <body>
-
-<!-- HEADER -->
-<div id="header_wrap" class="outer">
-    <header class="inner">
-        <img src="http://cafe.gongdong.or.kr/cafe_images/head_images/hae-dal_head_image.jpg">
-
-        <h2 id="project_tagline"></h2>
-
-
-    </header>
+<div id="header">
 </div>
-
-<nav class="navbar navbar-default" role="navigation">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">툴바 토글</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/2014/">
-                <img src="http://cafe.gongdong.or.kr/media/images/css/default/logo_small.gif" alt="">
-            </a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-
-
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <span class="glyphicon glyphicon-python"></span> 해와달 어린이집 <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-
-                        <li class="">
-                            <a href="./about/info">10주년 행사</a>
-                        </li>
-
-                        <li class="">
-                            <a href="./about/detail">행사 상세 정보</a>
-                        </li>
-
-                        <li class="">
-                            <a href="./about/announcements">알림</a>
-                        </li>
-
-                        <li class="">
-                            <a href="./about/staff">준비위원회 및 자원봉사자</a>
-                        </li>
-
-                    </ul>
-                </li>
-
-
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <span class="glyphicon glyphicon-calendar"></span> 프로그램 <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-
-                        <li class="">
-                            <a href="./programs/schedule">세부 일정</a>
-                        </li>
-
-                        <li class="">
-                            <a href="./programs/list">프로그램 목록</a>
-                        </li>
-
-                    </ul>
-                </li>
-
-
-                <li class="active">
-                    <a href="./registration"><span class="glyphicon glyphicon-pencil"></span> 등록 및 현장 안내</a>
-                </li>
-
-
-                <li class="">
-                    <a href="./venue"><span class="glyphicon glyphicon-map-marker"></span> 오시는 길</a>
-                </li>
-
-
-                <li class="">
-                    <a href="./contact"><span class="glyphicon glyphicon-info-sign"></span> 연락처</a>
-                </li>
-
-
-            </ul>
-            <!-- Right menu -->
-            <ul class="nav navbar-nav navbar-right">
-                <!-- Authenticate -->
-
-                <li class="">
-                    <a href="/2014/login/"><span class="glyphicon glyphicon-user"></span> 로그인</a>
-                </li>
-
-            </ul>
-            <!--
-            <form class="navbar-form navbar-right" role="search">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
-              </div>
-            </form>
-            -->
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-</nav>
 
 
 <!--
