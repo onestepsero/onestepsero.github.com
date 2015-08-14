@@ -12,7 +12,11 @@
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/media.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://deview.kr/2015/css/cfs-preview.css?20150612_1">
 
+
+
+    <script src="javascripts/slider.js"></script>
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -25,11 +29,60 @@
             $("#header").html(data);
         });
     });
+
+    var slider = new Slider('#_slider');
+
 </script>
 <body>
 <div id="header">
 </div>
 <!-- MAIN CONTENT -->
+
+
+
+
+<div id="wrap">
+    <h1 class="blind">DEVIEW 2015 Call For Speakers preview</h1>
+
+
+
+
+
+    <div id="container">
+        <div class="spot_wrap">
+            <div class="spot">
+                <!--
+                <h2 class="spot_tit"><a href="http://www.deview.kr"><img src="img/img_logo_txt.png" alt="DEVIEW 2015"></a></h2>
+                <!-- [D][AU] d-day 타이머 추가 -->
+
+                <p class="spot_clock_txt" id="_clock">
+                    <span class="clock_days">2015</span><span class="clock_bar"></span>
+                    <span class="clock_hours">9.19</span>
+                    <span class="clock_bar"></span>
+                    <span class="clock_minutes"></span></p>
+                <!--<p class="spot_clock_time_txt"><span>DAYS</span><span class="time_hours_txt">HOURS</span><span>MINUTES</span></p>-->
+                <!--<a href="#" class="btn_video" id="_btn_video">WATCH VIDEO</a>-->
+                -->
+                <!--<img src="./img/img_location_info.png" alt="2015년 9월 19일(토요일)  동작구민회관" class="location_info">-->
+            </div>
+            <div class="spot_pic" id="spot_pic">
+                <!-- [D] 슬라이더 적용 -->
+                <!-- [D][AU] ul 태그 추가, id="_slider" 추가 -->
+                <ul id="_slider" class="rslides" >
+                    <!--[D][AU] li 태그 추가, display 속성 'block'으로 변경 -->
+                    <li><img src="http://cafe.gongdong.or.kr/board_pds/2015/07/03/P1300531.jpg" class="img" width="1440" height="959" alt="" style="display:block;"></li>
+                    <li><img src="http://deview.kr/2015/img/img_slide2.png" class="img" width="1440" height="959" alt="" style="display:block;"></li>
+                    <li><img src="http://deview.kr/2015/img/img_slide3.png" class="img" width="1440" height="959" alt="" style="display:block;"></li>
+                    <li><img src="http://deview.kr/2015/img/img_slide4.png" class="img" width="1440" height="959" alt="" style="display:block;"></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content" class="content">
+
+      </div>
+        </div>
+    </div>
+
 <div id="main_content_wrap" class="outer">
     <section id="main_content" class="inner">
         <h3>TODO LIST</h3>
