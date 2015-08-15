@@ -52,11 +52,12 @@ var Slider = function(sElementId){
         };
 
         function positioning(windowWidth, windowHeight, imgHeightAttr, imgWidthAttr){
-            if(imgWidthAttr > windowWidth){
+           /* if(imgWidthAttr > windowWidth){
                 $(".img").css('left', -(imgWidthAttr - windowWidth)/2);
             }else{
                 $(".img").css('left', 0);
-            }
+            }*/
+            $(".img").css('left', 20);
 
             if(imgHeightAttr > windowHeight){
                 $(".img").css('top', -(imgHeightAttr - windowHeight)/2);

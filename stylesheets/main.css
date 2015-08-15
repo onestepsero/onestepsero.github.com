@@ -1,44 +1,168 @@
-/**
- * Created by NHNENT on 2015-08-12.
- */
-.navbar {
-    padding: 10px 0;
-    margin-bottom: 0px !important;
-}
+/*******************************************************************************
+Slate Theme for GitHub Pages
+by Jason Costello, @jsncostello
+*******************************************************************************/
 
-.navbar-default {
-    background: none;
+@import url(pygment_trac.css);
+
+/*******************************************************************************
+MeyerWeb Reset
+*******************************************************************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
     border: 0;
-    border-radius: 0;
+    font: inherit;
+    vertical-align: baseline;
 }
 
-.navbar-default .glyphicon {
-    margin-right: 3px;
-    top: 2px;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
 }
 
-.titlebar {
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a:focus {
+    outline: none;
+}
+
+pre, code {
+    width: 100%;
+    color: #222;
+    background-color: #fff;
+
+    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+    font-size: 14px;
+
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+
+
+
+}
+
+pre {
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    overflow: auto;
+}
+
+code {
+    padding: 3px;
+    margin: 0 3px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+pre code {
+    display: block;
+    box-shadow: none;
+}
+
+blockquote {
+    color: #666;
+    margin-bottom: 20px;
+    padding: 0 0 0 20px;
+    border-left: 3px solid #bbb;
+}
+
+
+
+dl dt {
+    font-weight: bold;
+}
+
+dl dd {
+    padding-left: 20px;
+    font-style: italic;
+}
+
+dl p {
+    padding-left: 20px;
+    font-style: italic;
+}
+
+hr {
+    height: 1px;
+    margin-bottom: 5px;
+    border: none;
+    background: url('../images/bg_hr.png') repeat-x center;
+}
+
+table {
+    border: 1px solid #373737;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+th {
+    font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding: 10px;
+    background: #373737;
+    color: #fff;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #373737;
+}
+
+form {
+    background: #f2f2f2;
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+/*******************************************************************************
+Full-Width Styles
+*******************************************************************************/
+
+.outer {
+    width: 100%;
+}
+
+.inner {
     position: relative;
-    background-color: #FAFAFA;
-    padding: 12px 0 20px 0;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #E7E7E7;
-    overflow: hidden;
+    max-width: 640px;
+    padding: 20px 10px;
+    margin: 0 auto;
 }
 
-.titlebar .background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0.1;
-}
+.spot_wrap{position:relative;height:600px;overflow:hidden}
 
-.seoul-color {
-    width: 100%;
-}
+.spot_wrap .spot_pic{position:absolute;top:0;left:0;width:100%;height:100%;z-index:10}
+.spot_wrap .spot_pic .spot_slider_lst > li{overflow:hidden}
+.spot_wrap .spot_pic img{position:relative}
 
-.seoul-color td {
-    color: transparent;
-    font-size: 0;
-    line-height: 4px;
-}
+.spot{height:600px;z-index:20}
+
