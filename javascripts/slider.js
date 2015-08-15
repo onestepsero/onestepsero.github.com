@@ -1,19 +1,16 @@
 /**
- * Created by 강나루 on 2015-08-14.
- */
-/**
  * Created by Rosalia on 15. 4. 29..
  */
 
 /**
- * �곷떒 �대�吏�瑜� �먮룞�쇰줈 �щ씪�대뵫�섎뒗 而댄룷�뚰듃
- * @param sElementId �щ씪�대뱶 �대�吏��ㅼ쓣 媛먯떥怨� �덈뒗 ul �붿냼�� id (ex. '#_slider')
+ * 상단 이미지를 자동으로 슬라이딩하는 컴포넌트
+ * @param sElementId 슬라이드 이미지들을 감싸고 있는 ul 요소의 id (ex. '#_slider')
  * @constructor
  */
 var Slider = function(sElementId){
     $(document).ready(function(){
-        // �곷떒 �대�吏� �щ씪�대뱶 �곸뿭 �대�吏� 泥섎━
-        // 硫붿씤 BG �대�吏� �ш린 �명똿
+        // 상단 이미지 슬라이드 영역 이미지 처리
+        // 메인 BG 이미지 크기 세팅
         var imgWidth = $(".img").attr("width");
         var imgHeight = $(".img").attr("height");
 
@@ -49,7 +46,7 @@ var Slider = function(sElementId){
                 $(".img").attr({"width" : imgWidthAttr, "height" : windowHeight});
             }
 
-            // 洹몃┝ �꾩튂 �↔린
+            // 그림 위치 잡기
             positioning(windowWidth, windowHeight, imgHeightAttr, imgWidthAttr);
 
         };
