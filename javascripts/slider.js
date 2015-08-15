@@ -68,8 +68,8 @@ var Slider = function(sElementId){
 
         $(sElementId).responsiveSlides({
             auto: true,
-            speed: 1500,
-            timeout: 6000
+            speed: 1000,
+            timeout: 2500
         });
 
     });
