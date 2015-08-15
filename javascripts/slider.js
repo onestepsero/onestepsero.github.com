@@ -57,7 +57,7 @@ var Slider = function(sElementId){
             }else{
                 $(".img").css('left', 0);
             }*/
-            $(".img").css('left', 20);
+            $(".img").css('left', 0);
 
             if(imgHeightAttr > windowHeight){
                 $(".img").css('top', -(imgHeightAttr - windowHeight)/2);
