@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'/>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
+    <meta name="description" content="www.haedal.org"/>
+    <meta name="viewport" content="width=device-width, initial-scale=0.85">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/media.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <title>www.haedal.org</title>
+</head>
+<script>
+
+    $(document).ready(function(){
+        $.get("header.html", function(data) {
+            $("#header").html(data);
+        });
+    });
+</script>
+<body>
+<div id="header">
+</div>
+<!-- MAIN CONTENT -->
+<div id="main_content_wrap" class="outer">
+
+
+    <div id="content">
+
+        <iframe src="https://www.google.com/maps/d/edit?mid=zG7mMH6nkUuY.krjBThjeuh3Y" width="400" height="500"></iframe>
+    </div>
+</div>
+
+
+<!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+    <footer class="inner">
+        <p>Published with <a href="">해와달</a></p>
+    </footer>
+</div>
+
+
+</body>
+</html>
